@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
 }
 
 body {
@@ -11,16 +12,17 @@ body {
   overflow: hidden;
 }
 
-h4 {
-  font-size: 20px;
+.heading {
+  font-size: 3rem;
   margin: 5px;
   text-transform: uppercase;
 }
 
+/* Where I left off coding */
 .counter {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 5%;
+  left: 5%;
   transform: translate(-50%, -50%);
   text-align: center;
 }

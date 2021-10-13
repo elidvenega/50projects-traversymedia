@@ -3,6 +3,7 @@ const counter = document.querySelector('.counter')
 const finalMessage = document.querySelector('.final')
 const replay = document.querySelector('#replay')
 
+// Why is this function been invoke at the top
 runAnimation()
 
 function resetDOM() {
