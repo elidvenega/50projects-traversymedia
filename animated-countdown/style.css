@@ -21,8 +21,8 @@ body {
 /* Where I left off coding */
 .counter {
   position: fixed;
-  top: 5%;
-  left: 5%;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -44,7 +44,7 @@ body {
 
 .final {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   text-align: center;
