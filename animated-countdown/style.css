@@ -18,7 +18,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Where I left off coding */
 .counter {
   position: fixed;
   top: 30%;
@@ -69,6 +68,7 @@ body {
   }
 }
 
+/* Numbers use in animation */
 .nums {
   color: #3498db;
   font-size: 50px;
