@@ -54,6 +54,17 @@ body {
   animation: show 0.2s ease-out;
 }
 
+#replay {
+  background: #3498db;
+  border: none;
+  border-radius: 5%;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  width: 70px;
+  
+}
+
 @keyframes show {
   0% {
     transform: translate(-50%, -50%) scale(0);
