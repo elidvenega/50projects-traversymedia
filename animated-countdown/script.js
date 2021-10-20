@@ -15,6 +15,7 @@ function resetDOM() {
   counter.classList.remove('hide')
   finalMessage.classList.remove('show')
 
+  // loops through array
   nums.forEach((num) => {
     num.classList.value = ''
   })
