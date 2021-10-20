@@ -8,6 +8,8 @@ const finalMessage = document.querySelector('.final')
 const replay = document.querySelector('#replay')
 
 // Why is this function been invoke at the top
+// makes sure animation runs
+// runs animation automatically
 runAnimation()
 
 function resetDOM() {
@@ -24,12 +26,18 @@ function resetDOM() {
 }
 
 function runAnimation() {
+  // loops through array and count backwards
   nums.forEach((num, idx) => {
     const nextToLast = nums.length - 1
 
+  //  try to understand this last part
+  // num target' all numbers
+  // The animationend event is fired when a CSS Animation has completed
     num.addEventListener('animationend', (e) => {
       if (e.animationName === 'goIn' && idx !== nextToLast) {
+        // removes animation
         num.classList.remove('in')
+        // add's text
         num.classList.add('out')
       } else if (e.animationName === 'goOut' && num.nextElementSibling) {
         num.nextElementSibling.classList.add('in')
@@ -45,3 +53,5 @@ replay.addEventListener('click', () => {
   resetDOM()
   runAnimation()
 })
+
+
