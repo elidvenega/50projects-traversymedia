@@ -41,6 +41,7 @@ body {
   }
 }
 
+/* show */
 .final {
   position: fixed;
   top: 30%;
@@ -54,14 +55,21 @@ body {
   animation: show 0.2s ease-out;
 }
 
+/* button */
 #replay {
   background: #3498db;
   border: none;
   border-radius: 5%;
   color: #fff;
   display: inline-block;
-  height: 30px;
+  height: 40px;
   width: 70px;
+  
+}
+
+#replay:hover {
+  height: 45px;
+  width: 75px;
   
 }
 
