@@ -33,6 +33,8 @@ function runAnimation() {
     //  try to understand this last part
     // num target' all numbers
     // The animationend event is fired when a CSS Animation has completed
+
+    // this part is for when animation ends
     num.addEventListener('animationend', (e) => {
       if (e.animationName === 'goIn' && idx !== nextToLast) {
         // removes animation
@@ -45,8 +47,12 @@ function runAnimation() {
             when an animation event occurs.
             The name of the animation is the value of the animation-name CSS property.
             This property is read-only. */
+
+        // this is for when animation when is about to end
       } else if (e.animationName === 'goOut' && num.nextElementSibling) {
         num.nextElementSibling.classList.add('in')
+        /*  This code is for when the animation is done it put's text back uop
+          with the replay button. */
       } else {
         // first div with numbers
         counter.classList.add('hide')
