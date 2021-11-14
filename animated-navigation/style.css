@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
 }
 
 body {
@@ -15,8 +16,8 @@ body {
   );
   font-family: 'Muli', sans-serif;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   height: 100vh;
   margin: 0;
 }
@@ -26,8 +27,8 @@ nav {
   padding: 20px;
   width: 80px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   border-radius: 3px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: width 0.6s linear;

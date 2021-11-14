@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav ul {
+    background: blueviolet;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
