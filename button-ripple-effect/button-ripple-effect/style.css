@@ -1,3 +1,4 @@
+/* Default Settings */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,13 +7,34 @@
 
 body {
   background: #000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
 }
 
-button {
-  display: flex;
-  margin: auto;
-  position: absolute;
-  top: 280px;
-  left: 640px;
+/* Button Styles */
+.btn {
+  background: purple;
+  color: #fff;
+  padding: 20px 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
