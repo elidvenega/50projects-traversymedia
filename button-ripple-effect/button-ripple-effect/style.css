@@ -6,7 +6,6 @@
 }
 
 body {
-  background: #000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -17,14 +16,49 @@ body {
   height: 100vh;
 }
 
+h1 {
+  color: #0b8793;
+}
+
 /* Button Styles */
 .btn {
-  background: purple;
+  background: #0b8793; /* fallback for old browsers */
+  border-radius: 10px;
+  border-color: transparent;
   color: #fff;
   padding: 20px 40px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  overflow: hidden;
   margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn span {
+  position: absolute;
+  border-radius: 50%;
+  /* To make it round */
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  /* for positioning */
+  margin-left: -50px;
+  animation: ripple 1s;
+  border: none;
+  opacity: 0;
+}
+
+/* Add animation */
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(10);
+  }
 }
